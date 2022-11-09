@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        main #sale-report table{
+   background-image: url("/images/dark-line-removebg-preview.png");
+   height: 20rem;
+   background-position: center;
+   background-size: cover;
+}
+
+@media (max-width:1200){
+    main #sale-report table{
+        background-image: url("dark-line-removebg-preview.png");
+        height: 20rem;
+        background-position: center;
+        background-size: cover;
+     }
+
+}
+
+@media (max-width:420){
+    main #sale-report table{
+        background-image: url("dark-line-removebg-preview.png");
+        height: 20rem;
+        background-position: center;
+        background-size: cover;
+     }
+
+}
+    </style>
+
+    <script src="https://kit.fontawesome.com/fed0ed22a3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/stylesheets/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+</head>
+<body>
+    <div id="modalOverlay">
+		<div class="modalPopup">
+			
+			<div class="embed-youtube">
+                <iframe width="745" height="315"
+                   src="https://www.youtube.com/embed/oe452WcY7fA?autoplay=1&mute=1">
+                </iframe>
+            </div>
+	
+			<div class="modalContent">
+				<h1>Modal window title here</h1>
+				<p>Modal appears on page load, presents information and is dismissed after the "Close" button is clicked. Styled modal messaging, images and other information here.</p>
+				<button class="buttonStyle" id="button">Close</button>
+			</div>
+		</div>
+	</div>
+
+    <div class="modal">
+        <div class="card">
+            <i  class="uil uil-multiply" id="close"></i>
+            <div class="brand">
+                <img src="https://media.istockphoto.com/id/1341437653/photo/abstract-composition-with-connecting-dots-and-lines-futuristic-network-background-for.jpg?b=1&s=170667a&w=0&k=20&c=dvHp0Kmr1AnjtiVHSe_fSRCzwUThDPx_SlW_n1UUiPg=" alt="">
+            </div>
+            <div class="info">
+                <h2>Subscribe To Our Newsletter</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil provident dolore quo eligendi ea accusamus illum ex quaerat accusantium veniam?</p>
+                <form action="#">
+                    <input type="email" placeholder="Email Address">
+                    <input type="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo"">
+                    <h2 style="color: pointer;"><span class="foo">Foo</span>Dies</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="uil uil-multiply" id="close"></span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a  href="">
+                    <span class="fa-sharp fa-solid fa-table-columns"></span>  
+                    <h3>Dashboard</h3>      
+                </a>
+                <a href="">
+                    <span class="fa-solid fa-house"></span>   
+                    <h3>Home</h3>      
+                </a>
+                <a href="">       
+                    <span class="fa-sharp fa-solid fa-list-check"></span>
+                    <h3>Reports</h3>      
+                </a>
+                <a href="">
+                    <span class="fa-sharp fa-solid fa-list-check"></span> 
+                    <h3>Orders</h3>      
+                </a>
+                <a href="">
+                    <span class="fa-solid fa-envelope"></span>  
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>      
+                </a>
+                <a style="cursor: pointer;" href="" class="active">
+                    <span class="fa-solid fa-user"></span>   
+                    <h3>Customer</h3>      
+                </a>
+                <a href="">
+                    <span class="fa-sharp fa-solid fa-gear"></span>
+                    <h3>Setting</h3>      
+                </a>
+                <a id="logout" href="/logout">
+                    <span class="fa-solid fa-right-from-bracket"></span>   
+                    <h3>Logout</h3>      
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div id="openBtn" style="cursor: pointer;" class="sales">
+                    <span class="fa-sharp fa-solid fa-arrow-trend-up"></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h1>$15,205</h1>
+                            <h3>Total Sales</h3>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="39" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>32.40%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last Week</small>
+                </div>
+                
+                <div id="openBtn" style="cursor: pointer;" class="expenses">
+                    <span class="fa-sharp fa-solid fa-arrow-trend-up"></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h1>$20,205</h1>
+                            <h3>Total Expenses</h3>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="39" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>32.40%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last Week</small>
+                </div>
+                <div id="openBtn" style="cursor: pointer;" class="income">
+                   <span class="fa-sharp fa-solid fa-arrow-trend-up"></span>
+                    <div class="middle">
+                        <div class="left">
+                            <h1>$25,205</h1>
+                            <h3>Total Income</h3>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="39" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>32.40%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last Week</small>
+                </div>
+            </div>
+
+           <div class="recent-orders" id="sale-report">
+                <h2>Sales Report</h2>
+                <table class="table">
+                
+                </table>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>KFC, New Jersy</td>
+                            <td>$234.90</td>
+                            <td>3</td>
+                            <td class="warning">$900</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>KFC, New Jersy</td>
+                            <td>$234.90</td>
+                            <td>3</td>
+                            <td class="warning">$900</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>KFC, New Jersy</td>
+                            <td>$234.90</td>
+                            <td>3</td>
+                            <td class="warning">$900</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>KFC, New Jersy</td>
+                            <td>$234.90</td>
+                            <td>3</td>
+                            <td class="warning">$900</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>KFC, New Jersy</td>
+                            <td>$234.90</td>
+                            <td>3</td>
+                            <td class="warning">$900</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-sharp">menu</span>
+                </button>
+                <div id="google_element">
+                </div>
+                <div class="theme-toggler">
+                    <span class="active" class="fa-sharp fa-solid fa-sun"></span>
+                    <span class="fa-sharp fa-solid fa-moon"></span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey,<b id="name"><%=user.fullname.split(' ').slice(0, -1).join(' ').replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase())%></b></p>
+                        <small class="text-muted">UI Designer</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="https://images.unsplash.com/photo-1613145997970-db84a7975fbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Recent Messages</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://images.unsplash.com/photo-1614289371518-722f2615943d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of
+                            Night Lion Tech GPS Drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://images.unsplash.com/photo-1629467057571-42d22d8f0cbd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of
+                            Night Lion Tech GPS Drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://images.unsplash.com/photo-1619539465730-fea9ebf950f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mike Tyson</b> received his order of
+                            Night Lion Tech GPS Drone</p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sales-analytics">
+                <h2>Data Analysis</h2>
+                <div class="item online">
+                    <div class="icons">
+                        <span class=" fa-solid fa-cart-shopping"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDER</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>$349</h3>
+                    </div>
+                </div>
+
+                <div class="item offline">
+                    <div class="icons">
+                        <span class="fa-sharp fa-solid fa-bag-shopping"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>$349</h3>
+                    </div>
+                </div>
+
+                <div class="item customers">
+                    <div class="icons">
+                        <span class="fa-solid fa-user"></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+29%</h5>
+                        <h3>$349</h3>
+                    </div>
+                </div>
+
+                <div class="item add-product">
+                    <div>
+                        <span class="fa-solid fa-plus"></span>
+                        <h3>Add Product</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate" type="text/javascript"></script>
+   
+    
+    <script src="/javascripts/dashboard.js"></script>
+    <script>
+         function loadGoogleTranslate(){
+            new google.translate.TranslateElement("google_element")
+        }
+
+        var text = document.querySelector("#name").innerHTML
+
+        window.onload =  function() {
+            
+            alert(text + " is Entering");
+   
+  document.getElementById('button').onclick = function() {
+    document.getElementById('modalOverlay').style.display = 'none'
+  }
+};
+
+var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);
+       
+       var logout = document.querySelector("#logout");
+          
+       logout.addEventListener("click", function(){
+           var text1 = document.querySelector("#name").innerHTML
+           alert(text + " is LogOut");
+       })
+    </script>
+</body>
+</html>
