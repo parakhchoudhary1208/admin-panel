@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container{
+    position: absolute;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.myRightCtn{
+    position: relative;
+    background: rgb(55,13,159);
+    background-image: linear-gradient(4deg, rgba(55,13,159,1) 30%, rgba(0,219,255,1) 100%);
+    border-radius: 22px;
+    height: 100%;
+    padding: 25px;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myLeftCtn{
+    position: relative;
+    background: #fff;
+    border-radius: 22px;
+    height: 100%;
+    padding: 25px;
+    padding-left: 50px;
+}
+
+.myLeftCtn header{
+    color: cornflowerblue;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.row{
+    height: 100%;
+}
+
+.mycard{
+    position: relative;
+    background: #fff;
+    height: 100%;
+    border-radius: 22px;
+    box-shadow: 10px 5px 37px #5e5e5e;
+}
+
+.myRightCtn header{
+    color: #fff;
+    font-size: 44px;
+}
+
+.box{
+    position: relative;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.myLeftCtn .myInput{
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    border: none;
+    box-shadow: 10px 5px 10px #5e5e5e73;
+}
+
+.myLeftCtn .myInput:focus{
+    outline: none;
+}
+
+.myForm{
+    position: relative;
+    margin-top: 50px;
+}
+
+.myLeftCtn .butt{
+    background: rgb(55,13,159);
+    background-image: linear-gradient(4deg, rgba(55,13,159,1) 30%, rgba(0,219,255,1) 100%);
+    color: #fff;
+    width: 230px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-left: 4%;
+    padding: 10px;
+    box-shadow: 10px 5px 10px #75747473;
+}
+
+.myLeftCtn .butt:hover{
+    cursor: pointer;
+    background: linear-gradient(4deg, rgb(87, 54, 170) 30%, rgb(115, 219, 235) 100%);
+}
+
+.myLeftCtn label input{
+    cursor: pointer;
+}
+
+.myLeftCtn a{
+    position: relative;
+    top: 3%;
+    left: 30%;
+}
+
+.myLeftCtn .butt:focus{
+    outline: none;
+}
+
+.myLeftCtn .fas{
+    position: relative;
+    color: rgb(58, 58, 173);
+    left: 36px;
+}
+
+.myLeftCtn .far{
+    position: relative;
+    color: rgb(58, 58, 173);
+    left: 0px;
+}
+
+.butt_out{
+    background: transparent;
+    color: #fff;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 10px 5px 10px #75747473;
+    cursor: pointer;
+}
+
+.butt_out:hover{
+    border: 2px solid rgb(125, 125, 197);
+}
+
+.butt_out:focus{
+    outline: none;
+}
+
+
+
+@media (max-width: 500px){
+    .myLeftCtn a{
+        left: 15%;
+        top: 4%;
+    }
+
+    .container{
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .myLeftCtn .myForm{
+        margin-left: -12%;
+    }
+
+    .myLeftCtn{
+        margin-top: -65%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
